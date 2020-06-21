@@ -37,6 +37,7 @@ $(function(){
                return layer.msg(res.message);
             }
             layer.msg(res.message);
+            $
         })
     })
     $('#form_login').on('submit',function(e){
@@ -51,6 +52,7 @@ $(function(){
             // 本地存储
             localStorage.setItem('token',res.token);
             location.href='./index.html'
+            $('#link_login').click();
         })
     })
 })
