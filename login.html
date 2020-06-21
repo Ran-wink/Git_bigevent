@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
     <!-- 引入css -->
     <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- 引入layui.js -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 引入jq -->
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/js/login.js"></script>
@@ -36,8 +38,8 @@
                     <!-- 密码 -->
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-password"></i>
-                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
-                            autocomplete="off" class="layui-input">
+                        <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
+                            autocomplete="off" class="layui-input" id="pwd">
                     </div>
                     <!-- 登录按钮 -->
                     <div class="layui-form-item">
@@ -61,13 +63,13 @@
                     <!-- 密码 -->
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-password"></i>
-                        <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                        <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
                             autocomplete="off" class="layui-input">
                     </div>
                     <!-- 确认密码 -->
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-password"></i>
-                        <input type="password" name="repassword" required lay-verify="required" placeholder="再次确认密码"
+                        <input type="password" name="repassword" required lay-verify="required|pass|repass" placeholder="再次确认密码"
                             autocomplete="off" class="layui-input">
                     </div>
                     <!-- 登录按钮 -->
